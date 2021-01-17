@@ -1,0 +1,106 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    line-height: 2em;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: minmax(1fr ,300px);
+    gap: 0 15px;
+    align-items: center;
+    margin: 2em 0;
+    ul{
+        list-style: none;
+        a{
+            width: 100%;
+            color: black;
+            text-decoration: none;
+            padding: 10px 10px;
+            
+        }
+
+        li{
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 769px){
+            display: none;
+            width: 900px;
+        }
+    }
+
+    img{
+        height: auto;
+        width: 100%;
+    }
+
+    .company-brand{
+        grid-column: 1 / 2;
+    }
+
+    .hamburger{
+        margin-left: 30%;
+         // tablet
+        @media screen and (min-width: 769px){
+            display: none;
+        }
+    }
+
+
+
+    // tablet
+    @media screen and (min-width: 769px){
+        grid: 124px / minmax(270px, 1fr) minmax(480px, 5fr);
+        margin: 0 2em;
+        justify-items: end;
+    }
+}
+
+.jumbotron{
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_960_720.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+
+.about-me{
+    margin: 5em 0;
+    text-align: center;
+}
+
+.title-sec{
+    width: max-content;
+    margin: 0 auto !important;
+    
+}
+footer{
+    text-align: center;
+}
+
+.footer-sub{
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_960_720.jpg);
+    background-size: cover;
+    height: 200px;
+    padding: 1em 1em;
+
+    input{
+        display: inline !important;
+        width: 100%;
+    }
+    button{
+        display: inline !important;
+    }
+}
+
+.footer-sec{
+    height: 30px;
+    background-color: grey;
+}
