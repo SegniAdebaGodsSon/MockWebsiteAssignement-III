@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
 
 
 *{
@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     background-color: white;
-    line-height: 2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav{
@@ -17,6 +17,7 @@ nav{
     align-items: center;
     margin: 2em 0;
     ul{
+        font-weight: 300;
         list-style: none;
         a{
             width: 100%;
@@ -63,52 +64,28 @@ nav{
     }
 }
 
-.jumbotron{
-    position: relative;
-    background-image: url(https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_960_720.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 441px;
-    text-align: center;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 90%);
-    .hero-text{
-        position: absolute;
-        top: 50%;
-        left: 45%;
-        background: none;
-        color: white;
-    }
-    @media screen and (min-width: 769px){
-        height: 730px;        
-    }
-}
-
-
-.about-me{
-    margin: 5em 0;
-    text-align: center;
-}
-
 .title-sec{
+    font-size: 26px;
     width: max-content;
-    margin: 0 auto !important;
-    
+    margin: 20px auto !important;
+    font-weight: 700;
 }
 footer{
     position: relative;
     text-align: center;
     margin-top: 5em;
     height: 375px;
-    background: -moz-linear-gradient(to left, #1b252f, #1c2631);
+    background: -moz-linear-gradient(to left, #1b252f, #1e2a36);
     display: grid;  
 
     @media screen and (min-width: 1025px){
         clip-path: polygon(10% 8%, 90% 8%, 90% 20%, 100% 13%, 100% 100%, 0 100%, 0 13%, 10% 20%);
     }
+    
     .footer-sub{
-        background-image: url(https://cdn.pixabay.com/photo/2016/11/12/23/00/mailbox-1819966_960_720.jpg);
+        background-image: url(https://cdn.pixabay.com/photo/2019/10/03/19/57/japan-4524260_960_720.jpg);
         background-size: cover;
+        background-position: center center;
         height: 244px;
         padding: 1em 1em;
         display: grid;
@@ -123,7 +100,6 @@ footer{
             grid: repeat(3, 81.3px) / 3fr 1fr;
             align-items: center;
             column-gap: 15px;
-            box-shadow: -30px -30px #1b252f ;
         }
 
 
@@ -133,6 +109,8 @@ footer{
         }
 
         .p-first{
+            font-weight: 700;
+            font-size: 26px;
             @media screen and (min-width: 1025px){
                 grid-column: span 2;
                 grid-row: 1 / 2;
@@ -140,6 +118,7 @@ footer{
         }
 
         .p-second{
+            color: #fff9;
             @media screen and (min-width: 1025px){
                 grid-row: 3 / 4;
                 grid-column: span 2;
@@ -172,11 +151,81 @@ footer{
         grid: 1fr / 4fr 3fr repeat(3, 1fr); 
         background: none !important;
         color: white;
+        i{
+            color: white;
+            background: none;
+        }
+        i:hover{
+            color: yellow;
+        }
+
         p{
             background: none !important;
+            grid-column: 1 / 2;
+        }
+
+        .fb-icon{
+            grid-column: 3 / 4;
+        }
+
+        .insta-icon{
+            grid-column: 4 / 5;
+        }
+
+        .twi-icon{
+            grid-column: 5 / 6;
+        }
+
+
+        @media screen and (min-width: 1025px){
+           position: absolute;
+           bottom: 3%;
+           left: 10%;
         }
     }
     
     
+}
+
+
+
+.jumbotron{
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_960_720.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 441px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 90%);
+    .hero-text{
+        font-weight: 900;
+        font-size: 65px;
+        letter-spacing: 2.7px;
+        
+        background: none;
+        color: white;
+    }
+    @media screen and (min-width: 769px){
+        height: 730px;        
+    }
+}
+
+
+.about-me{
+    margin: 3em 0 5em 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#mySlider{
+    width: 100%;
+    ol{
+        background: none;
+    }
 }
 
