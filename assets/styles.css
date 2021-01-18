@@ -56,11 +56,26 @@ nav .hamburger {
 }
 
 .jumbotron {
+  position: relative;
   background-image: url(https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_960_720.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 441px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 50% 100%, 0 90%);
+}
+.jumbotron .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  background: none;
+  color: white;
+}
+@media screen and (min-width: 769px) {
+  .jumbotron {
+    height: 730px;
+  }
 }
 
 .about-me {
@@ -74,26 +89,74 @@ nav .hamburger {
 }
 
 footer {
+  position: relative;
   text-align: center;
+  margin-top: 5em;
+  height: 375px;
+  background: -moz-linear-gradient(to left, #1b252f, #1c2631);
+  display: grid;
 }
-
-.footer-sub {
-  background-image: url(https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014619_960_720.jpg);
+@media screen and (min-width: 1025px) {
+  footer {
+    clip-path: polygon(10% 8%, 90% 8%, 90% 20%, 100% 13%, 100% 100%, 0 100%, 0 13%, 10% 20%);
+  }
+}
+footer .footer-sub {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/12/23/00/mailbox-1819966_960_720.jpg);
   background-size: cover;
-  height: 200px;
+  height: 244px;
   padding: 1em 1em;
+  display: grid;
+  grid: repeat(4, 1fr)/1fr;
+  border-radius: 10px;
 }
-.footer-sub input {
+@media screen and (min-width: 1025px) {
+  footer .footer-sub {
+    position: absolute;
+    width: 80%;
+    bottom: 27%;
+    left: 10%;
+    grid: repeat(3, 81.3px)/3fr 1fr;
+    align-items: center;
+    column-gap: 15px;
+    box-shadow: -30px -30px #1b252f;
+  }
+}
+footer .footer-sub p {
+  background: none !important;
+  color: white;
+}
+@media screen and (min-width: 1025px) {
+  footer .footer-sub .p-first {
+    grid-column: span 2;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 1025px) {
+  footer .footer-sub .p-second {
+    grid-row: 3/4;
+    grid-column: span 2;
+  }
+}
+footer .footer-sub input {
+  width: 100%;
+  height: 47px;
+}
+footer .footer-sub button {
   display: inline !important;
+  height: 47px;
   width: 100%;
 }
-.footer-sub button {
-  display: inline !important;
+footer .footer-last {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid: 1fr/4fr 3fr repeat(3, 1fr);
+  background: none !important;
+  color: white;
 }
-
-.footer-sec {
-  height: 30px;
-  background-color: grey;
+footer .footer-last p {
+  background: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
