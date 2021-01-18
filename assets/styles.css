@@ -19,14 +19,29 @@ nav ul {
   font-weight: 300;
   list-style: none;
 }
+nav ul li {
+  display: inline-block;
+}
 nav ul a {
   width: 100%;
   color: black;
   text-decoration: none;
   padding: 10px 10px;
+  transition: 0.3s;
 }
-nav ul li {
-  display: inline-block;
+nav ul i {
+  transition: 0.3s;
+}
+nav ul .nav-link:hover {
+  background: black;
+  color: white;
+}
+nav ul .nav-link:hover i {
+  color: white;
+  background: black;
+}
+nav ul ._icon:hover {
+  color: rgba(0, 0, 0, 0.4);
 }
 @media screen and (max-width: 769px) {
   nav ul {
@@ -54,6 +69,7 @@ nav .hamburger {
     grid: 124px/minmax(270px, 1fr) minmax(480px, 5fr);
     margin: 0 2em;
     justify-items: end;
+    column-gap: 30px;
   }
 }
 

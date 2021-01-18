@@ -16,25 +16,43 @@ nav{
     gap: 0 15px;
     align-items: center;
     margin: 2em 0;
+    
+    
     ul{
         font-weight: 300;
         list-style: none;
+        li{
+            display: inline-block;
+        }
+
         a{
             width: 100%;
             color: black;
             text-decoration: none;
             padding: 10px 10px;
-            
+            transition: 0.3s;
         }
-
-        li{
-            display: inline-block;
+        i{
+            transition: 0.3s;
+        }
+        .nav-link:hover{
+            background: black;
+            color: white;
+            i{
+                color: white;
+                background: black;
+            }
+        }
+        ._icon:hover{
+            color: rgba(0, 0, 0, 0.4);
         }
 
         @media screen and (max-width: 769px){
             display: none;
             width: 900px;
         }
+
+        
     }
 
     img{
@@ -61,6 +79,7 @@ nav{
         grid: 124px / minmax(270px, 1fr) minmax(480px, 5fr);
         margin: 0 2em;
         justify-items: end;
+        column-gap: 30px;
     }
 }
 
