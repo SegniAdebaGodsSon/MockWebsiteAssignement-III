@@ -367,4 +367,113 @@ footer .footer-last .lin-icon {
   border-color: white;
 }
 
+.blog-img-1 {
+  background-image: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/full_front_back.jpg);
+}
+
+.blog-img-2 {
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/21/16/53/students-5201691_960_720.jpg);
+}
+
+.blog-img-3 {
+  background-image: url(https://cdn.pixabay.com/photo/2020/12/27/13/28/crescent-5863934_960_720.jpg);
+}
+
+.blog-img-4 {
+  background-image: url(../images/ManUtd.jpg);
+}
+
+.blog-section .blog-card:not(:last-child) {
+  border-bottom: outset black 2px;
+}
+
+.blog-card {
+  display: grid;
+  grid-template: 1fr/1fr 2fr;
+  column-gap: 2em;
+  width: 80%;
+  margin: 2em auto;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 820px) {
+  .blog-card {
+    grid-template: 1fr 1fr/1fr;
+    row-gap: 2em;
+  }
+}
+.blog-card .blog-card-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: auto;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 820px) {
+  .blog-card .blog-card-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.blog-card .blog-card-content {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: grid;
+  grid-template: max-content max-content 2fr max-content/1fr 1fr;
+}
+@media screen and (max-width: 820px) {
+  .blog-card .blog-card-content {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.blog-card .blog-card-content a {
+  color: black;
+}
+.blog-card .blog-card-content p {
+  font-weight: 300;
+}
+.blog-card .blog-card-content .blog-date {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-weight: 400;
+}
+.blog-card .blog-card-content .blog-title {
+  grid-column: span 2;
+  grid-row: 2/3;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.blog-card .blog-card-content .blog-desc {
+  grid-column: span 2;
+  grid-row: 3/4;
+}
+.blog-card .blog-card-content .read-more {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  font-weight: 700;
+  justify-self: start;
+}
+.blog-card .blog-card-content .read-more:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.blog-card .blog-card-content .blog-news {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-self: end;
+}
+.blog-card .blog-card-content .blog-news:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.blog-card .blog-card-content .blog-share {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.blog-card .blog-card-content .blog-share:hover {
+  color: black;
+}
+
 /*# sourceMappingURL=styles.css.map */
