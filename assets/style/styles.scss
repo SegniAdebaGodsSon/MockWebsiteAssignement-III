@@ -54,6 +54,7 @@ nav{
     align-items: center;
     margin: 2em 0;
     
+
     
     ul{
         font-weight: 300;
@@ -519,3 +520,63 @@ footer{
 
 
 }
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+    div{
+        font-weight: 300;
+        list-style: none;
+    
+        
+        a{
+            width: 100%;
+            color: black;
+            padding: 10px 10px;
+            transition: 0.3s;
+        }
+        i{
+            transition: 0.3s;
+        }
+        .nav-link:hover{
+            background: black;
+            color: white;
+            i{
+                color: white;
+                background: black;
+            }
+        }
+ 
+        ._icon:hover{
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+
+    }
+}
+
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
